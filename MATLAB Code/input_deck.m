@@ -4,8 +4,8 @@
 % 3. normalize the signal axis
 
 
-opts = detectImportOptions('/Users/yao/Desktop/TS_data_lineouts/shot80.txt');
-M = readmatrix('/Users/yao/Desktop/TS_data_lineouts/shot80.txt',opts);
+opts = detectImportOptions('/Users/yao/Nextcloud/PROJECTS/LULI2000/cross_talk_Nov_2023/TS_data_lineouts/shot80.txt');
+M = readmatrix('/Users/yao/Nextcloud/PROJECTS/LULI2000/cross_talk_Nov_2023/TS_data_lineouts/shot80.txt',opts);
 
 res = 0.0037; % nm/px
 lmd0 = 526.5; % probe laser wavelength
