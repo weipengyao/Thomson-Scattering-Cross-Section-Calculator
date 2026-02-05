@@ -1,6 +1,7 @@
 % test script for Thomson code
 % Makes a plot of a Thomson scattering spectrum
 
+lmd0 = 526.5;
 ne= 1e26; % electron density m^{-3}
 Te=150; % electron temperature eV
 Ti=100; % ion temperature eV
@@ -25,12 +26,12 @@ nmLambda =1; % nm wavelength units flag
 % alpha = 1 / (k*lmd_D) [J. Ross, et al., RSI 81, 10D523 (2010)]
 % sprintf('%.2f',alpha)
 
-% figure('Color','white');
-% nmLambda =1;
-% plot(lambdaRange,scatteringCrossSection/max(scatteringCrossSection),'-r');
-% xlabel('Wavelength [nm]');
-% ylabel('Cross Section [m^-1 nm^-1 sr^-1]')
-% set(gca,'YScale','linear');
+figure('Color','white');
+nmLambda =1;
+plot(lambdaRange,scatteringCrossSection/max(scatteringCrossSection),'-r');
+xlabel('Wavelength [nm]');
+ylabel('Cross Section [m^-1 nm^-1 sr^-1]')
+set(gca,'YScale','linear');
 
 
 
